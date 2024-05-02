@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../static/main.js" defer></script>
+    <title>JS DOM Manipulation</title>
+</head>
+<body>
+    
+    <!-- onclick event example -->
+    <button onclick="handleClick()">Click Me!!!</button>
+    
+    <!-- onmouseover event example -->
+    <div onmouseover="handleMouseOver()">Mouse over me</div>
+    
+    <!-- onmouseout event example -->
+    <div onmouseout="handleMouseOut()">Mouse away from me</div>
+    
+    <!-- onsubmit event example -->
+    <form action="POST" onsubmit="handleSubmit(event)">
+        <input type="text" name="username" placeholder="Username Here">
+        <input type="password" name="password">
+        <button type="submit">Submit</button>
+    </form>
+    
+    <!-- onchange event example -->
+    <input type="text" onchange="handleChange(event)" placeholder="Change me!">
+    
+    
+    <!-- DOM MANIPULATION -->
+    <div class="container">
+        <h1>Welcome to the DOM!</h1>
+        <p id="paragraph">This is our original paragraph. But who know's things may change</p>
+        <button onclick="handleUpdate()">Click me to Change!</button>
+        <br>
+        <form onsubmit="handleCreate(event)">
+            <textarea id="w3review" name="newdiv" rows="4" cols="50"></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <br>
+        <input type="text" onchange="handleGetImage(event)" name="imageSrc" placeholder="give me that image url">
+    </div>
+    <br><br>
+    <button type="submit" onclick="handleDivChange()">Change Everything!</button>
+    
+    <div class="events">
+        <button id="eventButton" type="submit">Submit To See Event</button>
+    </div>
+</body>
+</html>
